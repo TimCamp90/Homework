@@ -1,0 +1,17 @@
+def ask psych_question
+    while true
+        puts psych_question
+        reply = gets.chomp.downcase
+        if 
+            reply == 'yes'
+            return true
+        end
+        if 
+            reply == 'no'
+            return false
+        end
+        puts "Please enter either 'yes' or 'no'."
+    end
+end
+likes_it = ask "Do you like eating tacos?"
+puts likes_it
